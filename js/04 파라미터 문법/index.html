@@ -5,26 +5,41 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="test.css">
 
-	<title>03 function 문법</title>
+	<title>04 파라미터 문법</title>
 </head>
 <body>
-	<!-- 3강 숙제로 알림창 닫기까지 만듦 -->
+<!--
 	<div class="alert-box" id="alert">
 		<p>알림창임</p>
-		<!-- 여기 추가한 거고 -->
 		<button onclick="알림창닫기()" id="close">닫기 버튼임</button>
 	</div>
-	<button onclick="알림창열기()" id="alert">알림창 여는 버튼</button>
-</body>
+	
+	<button onclick="알림창열기()" id="alert">알림창 여는 버튼</button> -->
+
+	
+	<div class="alert-box" id="alert">
+		<p>알림창임</p>
+		<button onclick="알림창열기('none')" id="close">닫기 버튼임</button>
+	</div>
+	
+	<button onclick="알림창열기('block')" id="open">알림창 여는 버튼</button>
+
+	</body>
 
 <script>
+/*
   function 알림창열기(){
     document.getElementById('alert').style.display = 'block';
   }
 
-	// 이 함수 추가했음
 	function 알림창닫기(){
 		document.getElementById('alert').style.display = 'none';
+
+	} */
+
+	function 알림창열기(구멍) {
+		document.getElementById('alert').style.display = 구멍;
 	}
+
 </script>
 </html>
