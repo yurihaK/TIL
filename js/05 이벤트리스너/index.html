@@ -8,56 +8,19 @@
 	<title>05 이벤트 리스너</title>
 </head>
 <body>
-<!-- 5강에서 저번시간 숙제 파트 보는 중 -->
+    <div class="alert-box" id="alert">
+        <p> 알림창 열기 </p>
+        <button onclick="알림창열기('none');">닫기</button>
+    </div>
 
-<!--
-	<div class="alert-box" id="alert">
-		<p>알림창임</p>
-		<button onclick="알림창닫기()" id="close">닫기 버튼임</button>
-	</div>
-	
-	<button onclick="알림창열기()" id="alert">알림창 여는 버튼</button> -->
+    <button onclick="1. p태그 내용을 아이디입력으로 바꿈 2. 띄움">버튼1</button>
+    <button onclick="">버튼2</button>
 
-	<!-- 
-버튼1 누르면 '아이디입력하세요' 라는 alert 박스가 떠야함
-버튼2 누르면 '비번입력하세요' 라는 alert 박스가 떠야함
- -->
-
-	
-	<div class="alert-box" id="alert">
-		<p class="alert-message">알림창임</p>
-		<button onclick="알림창열기('none')" id="close">닫기 버튼임</button>
-	</div>
-	
-	<button onclick="알림창열기('block')" id="open">알림창 여는 버튼</button>
-
-		<button onclick="메시지('아이디 쓰셈'); 열기('block');">버튼1</button>
-	<button onclick="메시지('비번 쓰셈'); 열기('block');">버튼2</button>
-
-	<script>
-	
-		function 알림창열기(구멍) {
-			document.getElementById('alert').style.display = 구멍;
-		}
-	
-		function 메시지창(메시지) {
-			document.getElementById('alert-message').innerHTML =
-		}
-	
-	</script>
-
-
-<!--     <script>
-        function 작명(newTitle) {
-            document.getElementById('title').innerHTML = newTitle;
+    <script>
+        function 알림창열기(구멍){
+            document.getElementById('alert').style.display = 구멍;
         }
-        
-        function 알림창열기(displayValue) {
-            document.getElementById('alert').style.display = displayValue;
-        }
-    </script> -->
-
-
+    </script>
 </body>
 
 </html>
